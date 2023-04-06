@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/SirFischer.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/SirFischer.github.io/static/js/main.f66f0ace.js",
-    "static/js/787.71e672d5.chunk.js": "/SirFischer.github.io/static/js/787.71e672d5.chunk.js",
-    "static/media/logo.svg": "/SirFischer.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/SirFischer.github.io/index.html",
-    "main.073c9b0a.css.map": "/SirFischer.github.io/static/css/main.073c9b0a.css.map",
-    "main.f66f0ace.js.map": "/SirFischer.github.io/static/js/main.f66f0ace.js.map",
-    "787.71e672d5.chunk.js.map": "/SirFischer.github.io/static/js/787.71e672d5.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.a1d6e66a.js",
+    "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.a1d6e66a.js.map": "/static/js/main.a1d6e66a.js.map",
+    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.f66f0ace.js"
+    "static/js/main.a1d6e66a.js"
   ]
 }
