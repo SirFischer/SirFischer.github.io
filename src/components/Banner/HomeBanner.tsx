@@ -3,26 +3,26 @@
  * File Created: Sunday, 9th April 2023 1:32:47 pm
  * Author: Marek Fischer
  * -----
- * Last Modified: Sunday, 9th April 2023 1:55:14 pm
+ * Last Modified: Sunday, 9th April 2023 3:43:34 pm
  * Modified By: Marek Fischer 
  * -----
  * Copyright - 2023 Deep Vertic
  */
 import React from 'react'
 import styled from 'styled-components';
-import backgroundSolider from '../../assets/SoldierBackground.png';
+import idleSoldier from '../../assets/Soldier_idle.gif';
 import ScrollToContent from './ScrollToContent';
 
 const Container = styled.div`
-	height: 90vh;
-	position: relative;
+	height: calc(100vh - 50px);
 `;
 
 const BackgroundSoldier = styled.img`
-	max-width: 25vw;
+	width: 20vw;
+	image-rendering: pixelated;
  	position: absolute;
-	bottom: 0;
-	left: 0;
+	bottom: 3rem;
+	left: 3rem;
 	@media (max-width: 768px) {
 		display: none;
 	}
@@ -49,7 +49,7 @@ const HomeBanner = (props: Props) => {
 
 	return (
 		<Container ref={contentRef} >
-			<BackgroundSoldier src={backgroundSolider} />
+			<BackgroundSoldier src={idleSoldier} />
 			<Slogan>
 				<h1>Where technology meets imagination.</h1>
 				<h2>Scroll down to unlock a world of digital adventure.</h2>

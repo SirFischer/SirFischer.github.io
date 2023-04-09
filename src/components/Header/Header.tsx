@@ -7,6 +7,8 @@ const Container = styled.header`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	position: relative;
+	height: 50px;
 `;
 
 type Props = {}
