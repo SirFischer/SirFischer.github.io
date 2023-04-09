@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Navigation from './Navigation/Navigation';
+import HeaderTitle from './HeaderTitle';
 
 const Container = styled.header`
 	display: flex;
@@ -13,7 +14,7 @@ type Props = {}
 const Header = (props: Props) => {
 	return (
 		<Container>
-			Deepvertic
+			<HeaderTitle />
 			<Navigation />
 		</Container>
 	)

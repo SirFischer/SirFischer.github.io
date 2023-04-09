@@ -3,7 +3,7 @@
  * File Created: Sunday, 9th April 2023 9:20:24 am
  * Author: Marek Fischer
  * -----
- * Last Modified: Sunday, 9th April 2023 10:01:02 am
+ * Last Modified: Sunday, 9th April 2023 12:59:24 pm
  * Modified By: Marek Fischer 
  * -----
  * Copyright - 2023 Deep Vertic
@@ -15,6 +15,7 @@ import styled from 'styled-components'
 const StyledNavLink = styled(NavLink)`
 	color: black;
   	text-decoration: none;
+	height: fit-content;
   	&:hover {
 		color: #555;
  	}
