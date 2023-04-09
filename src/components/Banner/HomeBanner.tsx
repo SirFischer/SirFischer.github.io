@@ -3,7 +3,7 @@
  * File Created: Sunday, 9th April 2023 1:32:47 pm
  * Author: Marek Fischer
  * -----
- * Last Modified: Sunday, 9th April 2023 3:43:34 pm
+ * Last Modified: Sunday, 9th April 2023 5:15:33 pm
  * Modified By: Marek Fischer 
  * -----
  * Copyright - 2023 Deep Vertic
@@ -12,9 +12,10 @@ import React from 'react'
 import styled from 'styled-components';
 import idleSoldier from '../../assets/Soldier_idle.gif';
 import ScrollToContent from './ScrollToContent';
+import { headerHeight } from '../Header/Header';
 
 const Container = styled.div`
-	height: calc(100vh - 50px);
+	height: calc(100vh - ${headerHeight});
 `;
 
 const BackgroundSoldier = styled.img`
