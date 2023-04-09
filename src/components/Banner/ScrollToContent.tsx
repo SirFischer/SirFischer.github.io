@@ -3,7 +3,7 @@
  * File Created: Sunday, 9th April 2023 1:51:52 pm
  * Author: Marek Fischer
  * -----
- * Last Modified: Sunday, 9th April 2023 1:59:03 pm
+ * Last Modified: Sunday, 9th April 2023 2:15:31 pm
  * Modified By: Marek Fischer 
  * -----
  * Copyright - 2023 Deep Vertic
@@ -41,7 +41,7 @@ const ScrollToContent = ({
 			}
 		}}
 	>
-		<Icon className='ri-arrow-down-line' />
+		<Icon className='ri-arrow-down-double-line' />
 	</Button>
   )
 }
