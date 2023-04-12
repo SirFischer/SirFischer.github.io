@@ -12,7 +12,7 @@ const Container = styled.header`
 	position: relative;
 	height: ${headerHeight};
 	box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3);
-	z-index: 2;
+	z-index: 99;
 `;
 
 type Props = {}

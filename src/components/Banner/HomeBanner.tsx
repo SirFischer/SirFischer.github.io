@@ -3,7 +3,7 @@
  * File Created: Sunday, 9th April 2023 1:32:47 pm
  * Author: Marek Fischer
  * -----
- * Last Modified: Sunday, 9th April 2023 5:15:33 pm
+ * Last Modified: Wednesday, 12th April 2023 7:25:02 am
  * Modified By: Marek Fischer 
  * -----
  * Copyright - 2023 Deep Vertic
@@ -19,7 +19,9 @@ const Container = styled.div`
 `;
 
 const BackgroundSoldier = styled.img`
-	width: 20vw;
+	height: 300px;
+	max-height: 40%;
+	aspect-ratio: 1/1;
 	image-rendering: pixelated;
  	position: absolute;
 	bottom: 3rem;

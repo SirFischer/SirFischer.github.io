@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { MouseEvent, useState } from 'react'
 import NavigationLink from './NavigationLink'
 import styled from 'styled-components';
+import { useOnClickOutside } from '../../../hooks/useOnClickOutside';
 
 const Nav = styled.nav`
 	display: flex;
@@ -44,17 +45,22 @@ type Props = {}
 
 const Navigation = (props: Props) => {
 	const [open, setOpen] = useState(false)
+	const containerRef = React.useRef<HTMLDivElement>(null);
 
-	const toggleOpen = () => {
-		setOpen(!open)
+	const toggleOpen = (e : MouseEvent<HTMLButtonElement>) => {
+		setOpen(old => !old);
 	}
+
+	useOnClickOutside(containerRef, (e : Event) => {
+		setOpen(false);
+	});
 
 	return (
 		<Nav>
 			<NavButton onClick={toggleOpen}>
 				<i className="ri-menu-line" />
 			</NavButton>
-			<Content open={open} >
+			<Content open={open} ref={containerRef} >
 				<NavigationLink
 					to="/"
 				>
