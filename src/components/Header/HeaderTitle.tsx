@@ -13,6 +13,10 @@ import logo from '../../assets/logo.svg';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+const StyledLink = styled(Link)`
+	height: 100%;
+`;
+
 const Logo = styled.img`
 	height: 100%;
 `;
@@ -21,9 +25,9 @@ type Props = {}
 
 const HeaderTitle = (props: Props) => {
   return (
-	<Link to="/" >
+	<StyledLink to="/" >
 		<Logo src={logo} alt="logo" />
-	</Link>
+	</StyledLink>
   )
 }
 

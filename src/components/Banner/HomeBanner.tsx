@@ -19,8 +19,10 @@ const Container = styled.div`
 `;
 
 const BackgroundSoldier = styled.img`
-	height: 300px;
 	max-height: 40%;
+	max-width: 25%;
+	height: 300px;
+	object-fit: cover;
 	aspect-ratio: 1/1;
 	image-rendering: pixelated;
  	position: absolute;
@@ -36,6 +38,17 @@ const Slogan = styled.div`
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	h2 {
+		font-weight: 500;
+	}
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 1.5em;
+		}
+		h2 {
+			font-size: 1.2em;
+		}
+	}
 `;
 
 const StyledScrollToContent = styled(ScrollToContent)`

@@ -12,11 +12,13 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components';
 
 const Button = styled.button<{ visible: boolean }>`
-	border: none;
+	border 1px solid black;
+	border-radius: 5px;
 	cursor: pointer;
 	position: fixed;
 	bottom: 2rem;
 	right: 2rem;
+	background-color: transparent;
 	opacity: ${props => props.visible ? 1 : 0};
 	transition: opacity 0.3s ease-in-out;
 `;
@@ -32,7 +34,7 @@ const ScrollToTop = (props: Props) => {
 
 	useEffect(() => {
 		const toggleVisibility = () => {
-			if (window.pageYOffset > window.innerHeight) {
+			if (window.pageYOffset >= window.innerHeight) {
 				setIsVisible(true);
 			} else {
 				setIsVisible(false);

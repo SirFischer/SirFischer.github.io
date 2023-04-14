@@ -11,12 +11,17 @@
 
 import { RefObject, useEffect } from 'react';
 
-export const useOnClickOutside = (ref: RefObject<any>, handler: (e : Event) => void) => {
+export const useOnClickOutside = (untouchables: RefObject<any> | RefObject<any>[], handler: (e : Event) => void) => {
 	useEffect(() => {
 		const listener = (event: any) => {
-			if (!ref.current || ref.current.contains(event.target)) {
-				return;
-			}
+			const refs = Array.isArray(untouchables) ? untouchables : [untouchables];
+			let isUntouchable = false;
+			refs.forEach((ref) => {
+				if (!ref.current || ref.current.contains(event.target)) {
+					isUntouchable = true;
+				}
+			});
+			if (isUntouchable) return;
 			handler(event);
 		};
 
@@ -27,5 +32,5 @@ export const useOnClickOutside = (ref: RefObject<any>, handler: (e : Event) => v
 			document.removeEventListener('mousedown', listener);
 			document.removeEventListener('touchstart', listener);
 		};
-	}, [ref, handler]);
+	}, [untouchables, handler]);
 };

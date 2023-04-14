@@ -2,6 +2,7 @@ import React, { MouseEvent, useState } from 'react'
 import NavigationLink from './NavigationLink'
 import styled from 'styled-components';
 import { useOnClickOutside } from '../../../hooks/useOnClickOutside';
+import NavigationButton from './NavigationButton';
 
 const Nav = styled.nav`
 	display: flex;
@@ -9,15 +10,6 @@ const Nav = styled.nav`
 	position: relative;
 `;
 
-const NavButton = styled.button`
-	display: none;
-	height: fit-content;
-	padding: 0.5rem;
-	align-self: center;
-	@media (max-width: 768px) {
-		display: block;
-	}
-`;
 
 const Content = styled.div<{ open: boolean}>`
 	display: flex;
@@ -38,6 +30,17 @@ const Content = styled.div<{ open: boolean}>`
 		padding: 1rem;
 		background-color: #fff;
 		border: 1px solid #ccc;
+		animation: slideIn 0.3s ease-in-out;
+		animation-direction: ${({ open }) => open ? 'normal' : 'reverse'};
+	}
+
+	@keyframes slideIn {
+		from {
+			transform: translateX(100%);
+		}
+		to {
+			transform: translateX(0);
+		}
 	}
 `;
 
@@ -46,20 +49,24 @@ type Props = {}
 const Navigation = (props: Props) => {
 	const [open, setOpen] = useState(false)
 	const containerRef = React.useRef<HTMLDivElement>(null);
+	const buttonRef = React.useRef<HTMLButtonElement>(null);
 
-	const toggleOpen = (e : MouseEvent<HTMLButtonElement>) => {
+	const toggleOpen = () => {
 		setOpen(old => !old);
 	}
 
-	useOnClickOutside(containerRef, (e : Event) => {
+	useOnClickOutside([containerRef, buttonRef], (e : Event) => {
+		if (!open) return ;
 		setOpen(false);
 	});
 
 	return (
 		<Nav>
-			<NavButton onClick={toggleOpen}>
-				<i className="ri-menu-line" />
-			</NavButton>
+			<NavigationButton
+				open={open}
+				toggleOpen={toggleOpen}
+				ref={buttonRef}
+			/>
 			<Content open={open} ref={containerRef} >
 				<NavigationLink
 					to="/"

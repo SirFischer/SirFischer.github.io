@@ -10,6 +10,7 @@ const Container = styled.header`
 	flex-direction: row;
 	justify-content: space-between;
 	position: relative;
+	width: 100%;
 	height: ${headerHeight};
 	box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3);
 	z-index: 99;
