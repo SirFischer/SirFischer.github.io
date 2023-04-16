@@ -1,4 +1,4 @@
-import React, { MouseEvent, useState } from 'react'
+import React, { useState } from 'react'
 import NavigationLink from './NavigationLink'
 import styled from 'styled-components';
 import { useOnClickOutside } from '../../../hooks/useOnClickOutside';

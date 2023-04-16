@@ -2,7 +2,8 @@ import React from 'react'
 import { RouterProvider, createHashRouter } from 'react-router-dom'
 import Home from './pages/Home';
 import Root from './pages/Root';
-import Apps from './pages/Apps';
+import Apps from './pages/Apps/Apps';
+import Games from './pages/Games/Games';
 
 type Props = {}
 
@@ -18,6 +19,10 @@ const router = createHashRouter([
 			{
 				path: '/apps',
 				element: <Apps />
+			},
+			{
+				path: '/games',
+				element: <Games />
 			}
 		]
 	}
