@@ -3,7 +3,7 @@
  * File Created: Friday, 14th April 2023 4:09:37 pm
  * Author: Marek Fischer
  * -----
- * Last Modified: Friday, 14th April 2023 10:01:14 pm
+ * Last Modified: Sunday, 23rd April 2023 1:37:47 pm
  * Modified By: Marek Fischer 
  * -----
  * Copyright - 2023 Deep Vertic
@@ -25,6 +25,15 @@ const List = (props: Props) => {
 				}}
 				description="A simple gym tracker that allows you to track your progress and keep track of your workouts."
 				url="https://play.google.com/store/apps/details?id=com.deepvertic.gymtracker"
+			/>
+			<ArticleListItem
+				title="Interest Calculator"
+				thumbnail={{
+					url: "",
+					alt: "Interest Calculator"
+				}}
+				description="A simple interest calculator that allows you to calculate the interest on a loan or investment."
+				url="https://play.google.com/store/apps/details?id=com.deepvertic.interestcalculator"
 			/>
 		</ArticleList>
 	)

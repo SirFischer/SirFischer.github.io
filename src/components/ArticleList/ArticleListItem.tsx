@@ -16,8 +16,9 @@ const Image = styled.img`
 const Details = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding: 1rem;
+	padding: 0 0 0 1.5rem;
 	position: relative;
+	flex-grow: 1;
 `;
 
 const Title = styled.h2`
