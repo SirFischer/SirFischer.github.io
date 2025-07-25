@@ -26,11 +26,12 @@ const Title = styled.h2`
 	margin: 0;
 `;
 
-const Link = styled.a`
+const Link = styled.a<{ $offline?: boolean }>`
 	color: #000;
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	cursor: ${props => props.$offline ? 'not-allowed' : 'pointer'};
 `;
 
 type Props = {
@@ -41,6 +42,7 @@ type Props = {
 	},
 	description: string,
 	url: string,
+	offline?: boolean
 }
 
 const ArticleListItem = (props: Props) => {
@@ -50,7 +52,7 @@ const ArticleListItem = (props: Props) => {
 		<Details>
 			<Title>{props.title}</Title>
 			<p>{props.description}</p>
-			<Link href={props.url} target="_blank" >Read more!</Link>
+			<Link href={props.offline ? undefined : props.url} $offline={props.offline} target="_blank" >{props.offline ? 'Offline' : 'Read more!'}</Link>
 		</Details>
 	</Container>
   )

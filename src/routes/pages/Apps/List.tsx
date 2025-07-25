@@ -25,6 +25,7 @@ const List = (props: Props) => {
 				}}
 				description="A simple gym tracker that allows you to track your progress and keep track of your workouts."
 				url="https://play.google.com/store/apps/details?id=com.deepvertic.gymtracker"
+				offline
 			/>
 			<ArticleListItem
 				title="Interest Calculator"
@@ -34,6 +35,7 @@ const List = (props: Props) => {
 				}}
 				description="A simple interest calculator that allows you to calculate the interest on a loan or investment."
 				url="https://play.google.com/store/apps/details?id=com.deepvertic.interestcalculator"
+				offline
 			/>
 		</ArticleList>
 	)

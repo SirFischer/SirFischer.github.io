@@ -80,6 +80,11 @@ const Navigation = (props: Props) => {
 					to="/games"
 				> Games </NavigationLink>
 				<NavigationLink
+					to="/tools"
+				>
+					Tools <i className="ri-tools-fill" />
+				</NavigationLink>
+				<NavigationLink
 					to="/contact"
 				> Contact </NavigationLink>
 			</Content>
