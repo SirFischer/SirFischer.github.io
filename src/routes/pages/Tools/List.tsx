@@ -22,6 +22,7 @@ const List = (props: Props) => {
 				}}
 				description="A tool for backtesting different Safe Withdrawal Rates (SWR) strategies for retirement planning and portfolio management."
 				url="https://swr-backtester.deepvertic.com/"
+				linkText="Use Tool"
 			/>
 		</ArticleList>
 	)

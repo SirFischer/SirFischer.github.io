@@ -8,16 +8,34 @@
 import React from 'react'
 import styled from 'styled-components';
 import List from './List';
+import { materialTheme } from '../../../theme/material3';
 
 const Container = styled.div`
-	height: 100%;
-	padding: 2rem;
+	min-height: calc(100vh - 64px);
+	padding: 24px;
 	max-width: 1200px;
 	margin: 0 auto;
+	background-color: ${materialTheme.colors.background};
 `;
 
 const Title = styled.h1`
-	font-size: 2rem;
+	font-family: ${materialTheme.typography.displaySmall.fontFamily};
+	font-size: ${materialTheme.typography.displaySmall.fontSize};
+	line-height: ${materialTheme.typography.displaySmall.lineHeight};
+	font-weight: ${materialTheme.typography.displaySmall.fontWeight};
+	letter-spacing: ${materialTheme.typography.displaySmall.letterSpacing};
+	color: ${materialTheme.colors.onBackground};
+	margin: 0 0 16px 0;
+`;
+
+const Description = styled.p`
+	font-family: ${materialTheme.typography.bodyLarge.fontFamily};
+	font-size: ${materialTheme.typography.bodyLarge.fontSize};
+	line-height: ${materialTheme.typography.bodyLarge.lineHeight};
+	font-weight: ${materialTheme.typography.bodyLarge.fontWeight};
+	letter-spacing: ${materialTheme.typography.bodyLarge.letterSpacing};
+	color: ${materialTheme.colors.onSurfaceVariant};
+	margin: 0 0 32px 0;
 `;
 
 type Props = {}
@@ -26,9 +44,9 @@ const Tools = (props: Props) => {
 	return (
 		<Container>
 			<Title>Tools</Title>
-			<p>
+			<Description>
 				Here you can find a list of all the tools I have created.
-			</p>
+			</Description>
 			<List />
 		</Container>
 	)

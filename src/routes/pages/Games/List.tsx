@@ -25,6 +25,7 @@ const List = (props: Props) => {
 				}}
 				description="You are a lone fighter searching for a challenge.. You are trapped in this realm of monsters and have to find an exit. During this travel you have to fight monsters, archers, knights, avoid traps and use your dexterity and strength to jump from platform to platform and wall to wall."
 				url="https://deepvertic.itch.io/skeletonsandtraps"
+				linkText="Play Game"
 			/>
 		</ArticleList>
 	)

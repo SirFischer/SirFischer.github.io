@@ -7,7 +7,7 @@ const List = styled.ul`
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
+	gap: 24px;
 `;
 
 type Props = {
