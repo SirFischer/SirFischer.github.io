@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import HomeBanner from '../../components/Banner/HomeBanner';
-import ComingSoon from '../../components/ComingSoon';
+import AboutSection from '../../components/AboutSection';
 import { materialTheme } from '../../theme/material3';
 
 const Container = styled.div`
@@ -25,7 +25,7 @@ const Home = (props: Props) => {
     <Container>
 		<HomeBanner />
 		<ContentSection>
-			<ComingSoon />
+			<AboutSection />
 		</ContentSection>
     </Container>
   )

@@ -24,6 +24,16 @@ const List = (props: Props) => {
 				url="https://swr-backtester.deepvertic.com/"
 				linkText="Use Tool"
 			/>
+			<ArticleListItem
+				title="Vertic Planner"
+				thumbnail={{
+					url: "https://verticplanner.deepvertic.com/assets/banner-zGmHDdVK.png",
+					alt: "Vertic Planner"
+				}}
+				description="Your personal productivity assistant with dynamic timetables, task management, and intelligent suggestions to boost your productivity and organize your day."
+				url="https://verticplanner.deepvertic.com/"
+				linkText="Use Tool"
+			/>
 		</ArticleList>
 	)
 }

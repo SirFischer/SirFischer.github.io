@@ -18,9 +18,10 @@ import { materialTheme } from '../../theme/material3';
 const Container = styled.div`
 	height: calc(100vh - ${headerHeight});
 	background: linear-gradient(135deg, 
-		${materialTheme.colors.background} 0%, 
-		${materialTheme.colors.surfaceContainer} 50%, 
-		${materialTheme.colors.surfaceContainerHigh} 100%);
+		${materialTheme.colors.surfaceContainerLow} 0%, 
+		${materialTheme.colors.surfaceContainer} 30%, 
+		${materialTheme.colors.surfaceContainerHigh} 70%, 
+		${materialTheme.colors.tertiaryContainer} 100%);
 	position: relative;
 	overflow: hidden;
 `;

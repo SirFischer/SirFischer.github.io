@@ -25,11 +25,12 @@ const Container = styled.div`
 const ImageContainer = styled.div`
 	flex-shrink: 0;
 	width: 150px;
-	height: 150px;
+	aspect-ratio: 1/1;
 	
 	@media (max-width: 768px) {
 		width: 100%;
-		height: 200px;
+		max-width: 200px;
+		margin: 0 auto;
 	}
 `;
 
@@ -37,6 +38,8 @@ const Image = styled.img`
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	display: block;
+	border-radius: ${materialTheme.shape.corner.medium};
 `;
 
 const Details = styled.div`
@@ -79,8 +82,8 @@ const Link = styled.a<{ $offline?: boolean }>`
 	align-self: flex-start;
 	padding: 10px 20px;
 	border-radius: ${materialTheme.shape.corner.medium};
-	background-color: ${props => props.$offline ? materialTheme.colors.surfaceVariant : materialTheme.colors.primaryContainer};
-	color: ${props => props.$offline ? materialTheme.colors.onSurfaceVariant : materialTheme.colors.onPrimaryContainer};
+	background-color: ${props => props.$offline ? materialTheme.colors.surfaceVariant : materialTheme.colors.tertiaryContainer};
+	color: ${props => props.$offline ? materialTheme.colors.onSurfaceVariant : materialTheme.colors.onTertiaryContainer};
 	transition: all ${materialTheme.motion.duration.short2} ${materialTheme.motion.easing.standard};
 	position: relative;
 	overflow: hidden;
@@ -90,7 +93,7 @@ const Link = styled.a<{ $offline?: boolean }>`
 		content: '';
 		position: absolute;
 		inset: 0;
-		background-color: ${props => props.$offline ? materialTheme.colors.onSurfaceVariant : materialTheme.colors.onPrimaryContainer};
+		background-color: ${props => props.$offline ? materialTheme.colors.onSurfaceVariant : materialTheme.colors.onTertiaryContainer};
 		opacity: 0;
 		transition: opacity ${materialTheme.motion.duration.short2} ${materialTheme.motion.easing.standard};
 	}

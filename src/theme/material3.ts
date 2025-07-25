@@ -6,25 +6,25 @@
  * Copyright - 2025 Deep Vertic
  */
 
-// Material Design 3 Color Tokens - Updated with more neutral scheme
+// Material Design 3 Color Tokens - Updated with subtle red accents
 export const colors = {
-  // Primary color palette - More neutral blue
-  primary: '#1976D2',
+  // Primary color palette - Blue with subtle warmth
+  primary: '#1565C0',
   onPrimary: '#FFFFFF',
-  primaryContainer: '#E3F2FD',
+  primaryContainer: '#E1F5FE',
   onPrimaryContainer: '#0D47A1',
 
-  // Secondary color palette - Neutral gray-blue
-  secondary: '#546E7A',
+  // Secondary color palette - Neutral with warm undertones
+  secondary: '#5D4037',
   onSecondary: '#FFFFFF',
-  secondaryContainer: '#ECEFF1',
-  onSecondaryContainer: '#263238',
+  secondaryContainer: '#EFEBE9',
+  onSecondaryContainer: '#3E2723',
 
-  // Tertiary color palette - Soft teal
-  tertiary: '#00695C',
+  // Tertiary color palette - Subtle red accent
+  tertiary: '#C62828',
   onTertiary: '#FFFFFF',
-  tertiaryContainer: '#E0F2F1',
-  onTertiaryContainer: '#004D40',
+  tertiaryContainer: '#FFEBEE',
+  onTertiaryContainer: '#B71C1C',
 
   // Error color palette
   error: '#D32F2F',
@@ -32,7 +32,7 @@ export const colors = {
   errorContainer: '#FFEBEE',
   onErrorContainer: '#B71C1C',
 
-  // Surface color palette
+  // Surface color palette with warm undertones
   background: '#FAFAFA',
   onBackground: '#212121',
   surface: '#FFFFFF',
@@ -40,10 +40,10 @@ export const colors = {
   surfaceVariant: '#F5F5F5',
   onSurfaceVariant: '#616161',
   surfaceContainerLowest: '#FFFFFF',
-  surfaceContainerLow: '#F8F9FA',
-  surfaceContainer: '#F1F3F4',
-  surfaceContainerHigh: '#E8EAED',
-  surfaceContainerHighest: '#DADCE0',
+  surfaceContainerLow: '#FFF8F6',
+  surfaceContainer: '#F3F1F0',
+  surfaceContainerHigh: '#EDE7E5',
+  surfaceContainerHighest: '#E4DDD9',
 
   // Outline
   outline: '#9E9E9E',
