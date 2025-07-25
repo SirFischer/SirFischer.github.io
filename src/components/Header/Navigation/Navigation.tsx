@@ -77,19 +77,25 @@ const Navigation = (props: Props) => {
 					Home <i className="ri-home-4-fill" />
 				</NavigationLink>
 				<NavigationLink
-					to="/apps"
-				> Apps </NavigationLink>
-				<NavigationLink
 					to="/games"
-				> Games </NavigationLink>
+				>
+					Games <i className="ri-gamepad-fill" />
+				</NavigationLink>
 				<NavigationLink
 					to="/tools"
 				>
 					Tools <i className="ri-tools-fill" />
 				</NavigationLink>
 				<NavigationLink
+					to="/apps"
+				>
+					Apps <i className="ri-apps-2-fill" />
+				</NavigationLink>
+				<NavigationLink
 					to="/contact"
-				> Contact </NavigationLink>
+				>
+					Contact <i className="ri-mail-fill" />
+				</NavigationLink>
 			</Content>
 		</Nav>
 	)
