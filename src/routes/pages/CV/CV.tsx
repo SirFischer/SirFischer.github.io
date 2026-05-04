@@ -177,7 +177,7 @@ const CV = () => {
           <Section>
             <SectionTitle>Personal Summary</SectionTitle>
             <p style={{ color: materialTheme.colors.onSurfaceVariant, lineHeight: 1.6 }}>
-              I am a software and web developer with experience in many technologies and a drive to prove myself in a new environment.
+              Passionate software engineer with a strong foundation in multiple technologies and a drive to innovate in new environments. With a proven track record of delivering impactful solutions, I'm dedicated to continuous learning and contributing to high-quality software development.
             </p>
           </Section>
 
@@ -195,9 +195,9 @@ const CV = () => {
           <Section>
             <SectionTitle>Core Skills</SectionTitle>
             <List>
-              <ListItem>Proficient in many technologies (Javascript/Typescript, C, C#, C++, PHP, HTML, React)</ListItem>
+              <ListItem>Proficient in JavaScript/TypeScript, C, C#, C++, PHP, HTML, and React</ListItem>
               <ListItem>Fluent in French, English, and Norwegian</ListItem>
-              <ListItem>Good communication skills</ListItem>
+              <ListItem>Excellent communication and problem-solving skills</ListItem>
             </List>
           </Section>
 
@@ -224,8 +224,8 @@ const CV = () => {
                 <JobMeta>Software Engineering | 2018 - 2020</JobMeta>
               </JobHeader>
               <List>
-                <ListItem>Intensive courses in different technologies.</ListItem>
-                <ListItem>Created a complete highly optimized 3D Rendering Engine from scratch.</ListItem>
+                <ListItem>Completed intensive courses in various technologies.</ListItem>
+                <ListItem>Developed a highly optimized 3D rendering engine from scratch.</ListItem>
               </List>
             </Card>
             <Card style={{ marginBottom: '16px' }}>
@@ -234,7 +234,7 @@ const CV = () => {
                 <JobMeta>Frontend Web Development | 2019 - 2022</JobMeta>
               </JobHeader>
               <List>
-                <ListItem>Designed and implemented several websites using different technologies and React Apps.</ListItem>
+                <ListItem>Designed and implemented multiple websites using various technologies and React applications.</ListItem>
               </List>
             </Card>
             <Card>
@@ -243,7 +243,7 @@ const CV = () => {
                 <JobMeta>Professional Degree in Back-end Development 1 | 2024 - June 2025</JobMeta>
               </JobHeader>
               <List>
-                <ListItem>One-year intensive program focusing on scalable backend technologies.</ListItem>
+                <ListItem>Completed a one-year intensive program focusing on scalable backend technologies.</ListItem>
               </List>
             </Card>
           </Section>
@@ -262,9 +262,9 @@ const CV = () => {
                 Development and maintenance of a large CMS for Norwegian municipalities.
               </p>
               <List>
-                <ListItem><strong>Modernization:</strong> Lead developer on the strategic transition from AngularJS to React in the CMS administrative interface.</ListItem>
-                <ListItem><strong>Component library:</strong> Main responsible for maintenance and further development of the company's central React component library.</ListItem>
-                <ListItem><strong>Innsyn:</strong> Further development of the core system used by a majority of Norwegian municipalities for political case processing.</ListItem>
+                <ListItem><strong>Modernization:</strong> Led the strategic transition from AngularJS to React in the CMS administrative interface.</ListItem>
+                <ListItem><strong>Component library:</strong> Mainly responsible for the maintenance and further development of the company's central React component library.</ListItem>
+                <ListItem><strong>Innsyn:</strong> Further developed the core system used by a majority of Norwegian municipalities for political case processing.</ListItem>
                 <ListItem><strong>DRUM:</strong> Architect (frontend) and developer of a real-time collaboration solution to validate published data.</ListItem>
                 <ListItem><strong>AI & Agentic Workflows:</strong> Created a custom MCP server with 10+ tools (including code/endpoint discovery, authenticated API calls, direct SQL access, and translation variable management). Designed "skills" for the team's agentic workflow, resulting in widespread colleague praise for significantly accelerating development speed.</ListItem>
               </List>
@@ -287,7 +287,7 @@ const CV = () => {
                 Development on various projects at Airbus in Toulouse, working in an international team (French/English).
               </p>
               <List>
-                <ListItem><strong>Communication Test Tool:</strong> Maintenance and further development of a C++/Qt-based tool for testing communication between ground stations and aircraft (ATSU).</ListItem>
+                <ListItem><strong>Communication Test Tool:</strong> Maintained and further developed a C++/Qt-based tool for testing communication between ground stations and aircraft (ATSU).</ListItem>
               </List>
               <TechStackList>
                 <TechChip>C++98</TechChip>
@@ -333,7 +333,7 @@ const CV = () => {
               Built custom 3D rendering engines and various games over several years.
             </p>
             <List>
-              <ListItem>Coded custom GUI Library and Basic Engine entirely from scratch.</ListItem>
+              <ListItem>Coded a custom GUI Library and Basic Engine entirely from scratch.</ListItem>
               <ListItem>Developed for both Linux and Windows environments.</ListItem>
               <ListItem>Implemented multiple games published online.</ListItem>
             </List>
