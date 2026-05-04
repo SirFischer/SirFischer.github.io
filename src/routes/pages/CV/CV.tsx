@@ -69,7 +69,7 @@ const ProfileImage = styled.img`
   background-color: ${materialTheme.colors.surfaceVariant};
   border: 4px solid ${materialTheme.colors.primary};
   object-fit: cover;
-  box-shadow: ${materialTheme.elevation.level2}alTheme.colors.onSurfaceVariant};
+  box-shadow: ${materialTheme.elevation.level2};
   font-size: 14px;
 `;
 
