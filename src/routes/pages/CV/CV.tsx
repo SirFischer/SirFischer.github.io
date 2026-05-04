@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { materialTheme } from '../../../theme/material3';
+import profileImage from '../../../assets/cv_profile.jpeg';
 
 const fadeInUp = keyframes`
   from {
@@ -61,16 +62,14 @@ const Subtitle = styled.h2`
   letter-spacing: 2px;
 `;
 
-const ProfileImagePlaceholder = styled.div`
+const ProfileImage = styled.img`
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-color: ${materialTheme.colors.surfaceVariant};
   border: 4px solid ${materialTheme.colors.primary};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: ${materialTheme.colors.onSurfaceVariant};
+  object-fit: cover;
+  box-shadow: ${materialTheme.elevation.level2}alTheme.colors.onSurfaceVariant};
   font-size: 14px;
 `;
 
@@ -170,7 +169,7 @@ const CV = () => {
           <Title>Marek Fischer</Title>
           <Subtitle>Software Engineer</Subtitle>
         </HeaderText>
-        <ProfileImagePlaceholder>Profile Picture</ProfileImagePlaceholder>
+        <ProfileImage src={profileImage} alt="Marek Fischer Profile" />
       </Header>
 
       <ContentGrid>
