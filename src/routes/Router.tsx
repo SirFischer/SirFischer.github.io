@@ -6,6 +6,7 @@ import Apps from './pages/Apps/Apps';
 import Games from './pages/Games/Games';
 import Tools from './pages/Tools/Tools';
 import Contact from './pages/Contact';
+import CV from './pages/CV/CV';
 
 type Props = {}
 
@@ -33,6 +34,10 @@ const router = createHashRouter([
 			{
 				path: '/contact',
 				element: <Contact />
+			},
+			{
+				path: '/cv',
+				element: <CV />
 			}
 		]
 	}

@@ -92,6 +92,11 @@ const Navigation = (props: Props) => {
 					Apps <i className="ri-apps-2-fill" />
 				</NavigationLink>
 				<NavigationLink
+					to="/cv"
+				>
+					CV <i className="ri-file-user-fill" />
+				</NavigationLink>
+				<NavigationLink
 					to="/contact"
 				>
 					Contact <i className="ri-mail-fill" />

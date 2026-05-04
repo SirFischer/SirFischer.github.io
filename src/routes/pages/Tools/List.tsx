@@ -8,12 +8,23 @@
 import React from 'react'
 import ArticleList from '../../../components/ArticleList/ArticleList'
 import ArticleListItem from '../../../components/ArticleList/ArticleListItem'
+import firesideLogo from '../../../assets/fireside.svg';
 
 type Props = {}
 
 const List = (props: Props) => {
 	return (
 		<ArticleList>
+			<ArticleListItem
+				title="FIRESIDE"
+				thumbnail={{
+					url: firesideLogo,
+					alt: "FIRESIDE Logo"
+				}}
+				description="A comprehensive SaaS application for personal finance management, tracking, and planning."
+				url="https://fireside.money/"
+				linkText="Use Tool"
+			/>
 			<ArticleListItem
 				title="SWR Backtester"
 				thumbnail={{
