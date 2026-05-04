@@ -198,7 +198,6 @@ const CV = () => {
               <ListItem>Proficient in many technologies (Javascript/Typescript, C, C#, C++, PHP, HTML, React)</ListItem>
               <ListItem>Fluent in French, English, and Norwegian</ListItem>
               <ListItem>Good communication skills</ListItem>
-              <ListItem>Great climber!</ListItem>
             </List>
           </Section>
 
@@ -229,13 +228,22 @@ const CV = () => {
                 <ListItem>Created a complete highly optimized 3D Rendering Engine from scratch.</ListItem>
               </List>
             </Card>
-            <Card>
+            <Card style={{ marginBottom: '16px' }}>
               <JobHeader>
                 <JobTitle>Noroff (Online)</JobTitle>
                 <JobMeta>Frontend Web Development | 2019 - 2022</JobMeta>
               </JobHeader>
               <List>
                 <ListItem>Designed and implemented several websites using different technologies and React Apps.</ListItem>
+              </List>
+            </Card>
+            <Card>
+              <JobHeader>
+                <JobTitle>Noroff (Online)</JobTitle>
+                <JobMeta>Professional Degree in Back-end Development 1 | 2024 - June 2025</JobMeta>
+              </JobHeader>
+              <List>
+                <ListItem>One-year intensive program focusing on scalable backend technologies.</ListItem>
               </List>
             </Card>
           </Section>
@@ -334,7 +342,6 @@ const CV = () => {
               <TechChip>OpenGL</TechChip>
               <TechChip>SFML</TechChip>
               <TechChip>Boost</TechChip>
-              <TechChip>MySQL</TechChip>
             </TechStackList>
           </Card>
 
